@@ -35,7 +35,7 @@ class Birthday(Field):
             datetime.strptime(value, "%d.%m.%Y")  # validate only
         except ValueError:
             raise ValueError("Invalid date format. Use DD.MM.YYYY")
-        super().__init__(value)  # value залишається рядком
+        super().__init__(value)
 
 
 # _____________________ RECORD _____________________
